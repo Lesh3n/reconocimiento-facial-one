@@ -27,5 +27,9 @@ opencv-python==4.10.0.84
     # via reconocimiento-one
 pillow==11.0.0
     # via face-recognition
+pymysql==1.1.1
+    # via reconocimiento-one
+python-dotenv==1.0.1
+    # via reconocimiento-one
 setuptools==75.6.0
     # via reconocimiento-one

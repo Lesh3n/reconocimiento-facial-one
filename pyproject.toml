@@ -11,6 +11,8 @@ dependencies = [
     "face-recognition-models @ git+https://github.com/ageitgey/face_recognition_models",
     "dlib==19.21.1",
     "setuptools>=75.6.0",
+    "pymysql>=1.1.1",
+    "python-dotenv>=1.0.1",
 ]
 
 readme = "README.md"
