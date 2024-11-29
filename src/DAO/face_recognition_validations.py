@@ -1,17 +1,16 @@
-from . import connection
-import pymysql.cursors
+import connection
+
+cursor, conn = connection.get_db_connection()
+if not conn:
+    raise Exception("There's no connection with the database. Quitting...")
 
 def try_db():
-    with connection:
-        with connection.cursor() as cursor:
-            query = 'SELECT "Hello World!'
-            cursor.execute(query)
-            result = cursor.fetchone()
-            print(result)
-            cursor.close()
-    
-    connection.close()
+    print('hola')
+    query = 'SELECT "Hello World!"'
+    cursor.execute(query)
+    result = cursor.fetchone()
+    print(result)
 
 
-if '__name__' == '__main__':
+if __name__ == '__main__':
     try_db()
