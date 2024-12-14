@@ -68,7 +68,7 @@ while True:
             if matches[best_match_index]:
                 name = known_face_names[best_match_index]
             face_names.append(name)
-            time.sleep(5)
+
 
 
     process_this_frame = not process_this_frame
