@@ -38,6 +38,7 @@ class InterfazRegistroBiometriaFacial:
                 print(f'Ha ocurrido un error: {e}')
 
 
+
 if __name__ == '__main__':
     root = Tk()
     InterfazRegistroBiometriaFacial(root)
